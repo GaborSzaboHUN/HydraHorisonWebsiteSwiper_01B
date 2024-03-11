@@ -1,54 +1,23 @@
-/* - - - - RESET CSS - - - - */
-
-* {
+body {
     margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-    background: transparent;
-    font-family: inherit;
 }
 
-html {
+section {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
-
-a {
-    text-decoration: none;
-}
-
-a img {
-    border: none;
-}
-
-button,
-a {
-    cursor: pointer;
-    color: inherit;
-}
-
-textarea {
-    resize: none;
-}
-
-button,
-input,
-textarea,
-select {
-    appearance: none !important;
-    border-radius: 0;
-}
-
-/* - - - - END RESET CSS - - - - */
 
 section.is-slider-gallery {
     width: 100%;
     height: 80svh;
+
+    box-sizing: border-box;
 }
 
 .slider-gallery-component {
+    box-sizing: border-box;
+
     position: relative;
     width: 100%;
     height: 100%;
@@ -60,6 +29,8 @@ section.is-slider-gallery {
 }
 
 .slider-bg-component {
+    box-sizing: border-box;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -94,14 +65,14 @@ section.is-slider-gallery {
     height: 100%;
 }
 
-
 .swiper-slide.is-slider-bg img {
     width: 100%;
     height: 100%;
 
     object-fit: cover;
-}
 
+    border: none;
+}
 
 .slider-tiles-component {
     position: relative;
@@ -142,6 +113,8 @@ section.is-slider-gallery {
 }
 
 .slider-titles-heading {
+    margin: 0;
+
     font-family: "Oswald", sans-serif;
     font-size: 70px;
     font-weight: 500;
@@ -167,9 +140,13 @@ section.is-slider-gallery {
 }
 
 .text-details {
+    box-sizing: border-box;
+
     position: relative;
     left: 30px;
     max-width: 500px;
+
+    margin: 0;
 
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
@@ -196,6 +173,8 @@ section.is-slider-gallery {
 }
 
 .slider-gallery-bottom-wrapper {
+    box-sizing: border-box;
+
     position: absolute;
     bottom: 0;
 
@@ -210,6 +189,8 @@ section.is-slider-gallery {
 }
 
 .slider-gallery-button-wrapper {
+    box-sizing: border-box;
+
     width: 40%;
     display: flex;
     align-items: center;
@@ -218,6 +199,8 @@ section.is-slider-gallery {
 }
 
 .slider-gallery-button {
+    box-sizing: border-box;
+
     width: 45px;
     aspect-ratio: 1/1;
     border-radius: 50%;
@@ -227,9 +210,10 @@ section.is-slider-gallery {
     justify-content: center;
     align-items: center;
 
+    cursor: pointer;
+
     background-color: rgba(0, 0, 0, 0.35);
     transition: all .3s ease-in-out;
-
 }
 
 .slider-gallery-button.swiper-next {
@@ -245,6 +229,8 @@ section.is-slider-gallery {
 }
 
 .slider-gallery-numbers {
+    margin: 0;
+
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -262,6 +248,8 @@ section.is-slider-gallery {
 }
 
 .swiper.is-slider-bg.slideshow-top {
+    box-sizing: border-box;
+
     position: absolute;
     top: 0;
     height: 50%;
