@@ -46,6 +46,13 @@ $('.slider-gallery-component').each(function (index) {
         centeredSlides: true,
         slideActiveClass: 'is-active',
         slideDuplicateActiveClass: 'is-active',
+
+        autoplay: {
+            delay: 8000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+        },
+
         thumbs: {
             swiper: bgSwiper,
         },
